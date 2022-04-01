@@ -5,13 +5,13 @@
 el fichero tcr.sh implementa el flujo TCR
 
 ```
-./scripts/build.sh && (./scripts/test.sh && ./scripts/commit.sh || ./scripts/revert.sh)
+./scripts/test.sh && ./scripts/commit.sh || ./scripts/revert.sh
 ```
 
 los diferentes comandos están separados en scripts para facilitar variantes del flujo. Pero podemos lanzar un único comando si lo preferimos:
 
 ```
-dotnet build && (dotnet test && git -am working || git revert --hard)
+dotnet test && git -am working || git reset --hard
 ```
 
 ## Katas para probar
