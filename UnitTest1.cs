@@ -13,7 +13,15 @@ namespace tcr
           int expectedValue = 0;
           Assert.Equal(expectedValue, resultValue);
         }
-    }
+
+        public void Test2()
+        {
+          int posotion = 2;
+          int resultValue = Fibonacci.Calculate(posotion);
+          int expectedValue = 1;
+          Assert.Equal(expectedValue, resultValue);
+        }
+  }
 
     public static class Fibonacci
     {
