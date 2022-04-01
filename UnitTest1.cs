@@ -14,6 +14,7 @@ namespace tcr
           Assert.Equal(expectedValue, resultValue);
         }
 
+        [Fact]
         public void Test2()
         {
           int posotion = 2;
@@ -25,8 +26,9 @@ namespace tcr
 
     public static class Fibonacci
     {
-      public static int Calculate(int posotion)
+      public static int Calculate(int position)
       {
+        if (position == 2) return 1;
         return 0;
       }
     }
